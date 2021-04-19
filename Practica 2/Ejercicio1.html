@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style type="text/css">
+
+    body{
+        color: rgb(225, 207, 243);
+        font-size: 10pt;
+    }
+    h1{
+        color: rgb(5, 186, 218);
+    }
+    p{
+        font-size: 12pt;
+        color:royalblue;
+    }
+    b,li{
+        color:white;
+        font-size: 15pt;
+    }
+    </style>
+</head>
+<body>
+    <!-- Tosoratto Facundo 45784-->
+    <h1>Ejercicio 1 Practica 2</h1>
+    <ol>
+        <li>
+            <p>Css son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en
+                cascada.
+                Las hojas de estilo son una teconologia que nos permite controlar la apariencia de una
+                pagina web. En un principio, los sitios web se concentraban más en su contenido que
+                en su presentación<br>
+                HTML no pone atencion en la aparariencia del documento, sino en la estructura.
+                CSS describe como los elementos dspuestos en la pagina son presentados al usuario
+            </p>
+        </li>
+        <li>
+            <p>CSS funciona en base de reglas, es decir, declaraciones sobre el estilo de uno o mas
+                elementos. Las hojas de estilo estan compuestas por una o mas de esas reglas
+                aplicadas a un documento HTML o XML. La regla tiene dos partes: un selector y la
+                declaracion. A su vez la declaracion esta compuesta por una propiedad y el valor
+                que se le asigne <br>
+                El selector funciona como enlace entre el docmento y el estilo, especificando los
+                elementos que se van a ver afectados por esa declaración.
+                La declaracion es la parte de la regla que establece cual sera el efecto.
+            </p>
+        </li>
+        <li>
+            <ol>
+                <li>
+                    <p>Utilizando una hoja de estilo externa que estara vinculada a un documento a travez
+                        del elemento &lt;link&gt;, el cual debe ir situado en la seccion &lt;head&gt;. De esta forma los estilos
+                        seran reconocidos antes de que la pagina se cargue por completo                        
+                    </p>
+                </li>
+                <li>
+                    <p>Utilizando el elemento &lt;style&gt;, en el interior del documento al que se le quiere dar estiolo, y 
+                    que generalmente se situaria en la seccion &lt;head&gt;. De esta forma los estilos seran reconocidos
+                    antes de que la página se cargue por completo.
+                    </p>
+                </li>
+                <li>
+                    <p>Utilizando estilos directamente sobre aquellos elementos que lo permiten a traves del atributo
+                        &lt;style&gt; dentro de &lt;body&gt;. Pero este tipo de estilo pierde las ventajas que ofrecen
+                        las hojas de estilo al mezclarse el contenido con la presentacion.
+                    </p>
+                </li>
+             </ol>
+        </li>
+        <li>
+            <ul>
+                <li>
+                    <p><b>Selector Universal: </b> <br>
+                    Sintaxis: * { atributo:valor; } <br>
+                    Ejemplo:* { color: grey; } El estilo se aplicará a todos los elementos de la página</p>
+                </li>
+                <li>
+                    <p><b>Selector Etiqueta: </b> <br> 
+                    Sintaxis: etiqueta { atributo:valor } <br>
+                    Ejemplo: p {color: green;}   El estilo se aplicará a todos los elementos &lt;p&gt;  </p>
+                </li>
+                <li>
+                    <p><b>Selector Clase: </b> <br>
+                    Sintaxis: .clase { atributo:valor } <br>
+                    Ejemplo: .blend{color: red;}  El estilo se aplicará a cualquier elemento que tenga la clase .blend </p>
+                </li>
+                <li>
+                    <p><b>Selector Identificador: </b> <br>
+                    El selector identificador utiliza el atributo id para seleccionar un elemento. Solo puede haber 
+                    un elemento con un id dado en un documento. <br>
+                    Sintaxis: #id { atributo:valor } <br>
+                    Ejemplo: #cent {color: blue;}  El estilo se aplicará al elemento que tenga el id #cent 
+                    </p>
+                </li>
+                <li>
+                    <p><b>Selector Descendiente: </b> <br>
+                    Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del elemento padre. <br>
+                    Sintaxis: selector1 selector2 selectorN {atributo: valor;}  El estilo se aplica sobre el selector N  <br>
+                    Ejemplo: div p { color: black;}  El estilo se aplica a todos los párrafos que se encuentren dentro de una etiqueta div 
+                    </p>
+                </li>
+                <li>
+                    <p><b>Combinacion de Selectores: </b> <br>
+                    La combinación de selectores nos permite dar un estilo a todos los selectores indicados. <br>
+                    Sintaxis: selector1, selector2, selector3{atributo: valor;}  El estilo se aplica sobre los selectores indicados <br>
+                    Ejemplo: div, p { color: orange;}  El estilo se aplica a todos los divs y párrafos 
+                    </p>
+                </li>
+                <li>
+                    <p> <b>Selector de Hijos: </b> <br>
+                    Se usa para seleccionar un elemento que es hijo de otro elemento. <br>
+                    Sintaxis: selector1 > selector2 {atributo: valor;}  El estilo se aplica sobre el selector 2 <br>
+                    Ejemplo: div > p { color: white;} El estilo se aplica a todos los párrafos que sean hijos de un div 
+                    </p>
+                </li>
+                <li>
+                    <p><b>Selector Adyacente: </b> <br>
+                    Se usa para seleccionar elementos que son hermanos, es decir, su elemento padre es el mismo y están seguidos en el código HTML. <br>
+                    Sintaxis: selector1 + selector2{ atributo: valor; } El estilo se aplica al selector 2  <br>
+                    Ejemplo: div + p { color: black;} El estilo se aplica a todos los párrafos que sean hermanos de un div 
+                    </p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Las pseudo-clases clasifican a los elementos basado en características más allá de su nombre, atributos o contenido; en principio, 
+                atributos que no pueden deducirse de la estructura del documento. Las pseudo-clases pueden ser dinámicas, en el sentido de que un 
+                elemento puede adquirir o perder una pseudo-clase a medida que el usuario interactúa con el documento. La excepción 
+                es ':first-child', que puede deducirse de la estructura del documento <br> <br>
+                Las aplicaciones del usuario normalmente muestran los vínculos no visitados de un modo diferenciado de aquellos previamente visitados. <br>
+                CSS proporciona las pseudo-clases ':link' y ':visited' para distinguirlos: <br>
+                La pseudo-clase :link se aplica a los vínculos que aún no han sido visitados. <br>
+                La pseudo-clase :visited se aplica una vez que el vínculo ha sido visitado por el usuario.
+            </p>
+        </li>
+        <li>
+            <p>La herencia en CSS es el mecanismo mediante el cual determinadas propiedades de un elemento padre se transmiten a sus hijos. <br>
+                Mediante la herencia, por ejemplo, se pueden especificar las propiedades de las fuentes de los elementos html o body y todo el resto 
+                de elementos los heredarán.
+            </p>
+        </li>
+        <li>
+            <p>La cascada es el mecanismo que controla el resultado final de como visualizaremos una etiqueta html cuando a esta se 
+                le apliquen distintas instrucciones CSS <br>
+                Un mismo elemento puede estar sujeto a varias hojas de estilos CSS y existen unas normas que indican de forma inequívoca 
+                cual de todas las instrucciones es la que debe afectar a un determinado elemento html.
+            </p>
+        </li>
+    </ol>
+</body>
+</html>

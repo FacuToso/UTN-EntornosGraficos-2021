@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <style>
+        h1 {
+        color: red;
+        }
+        h2 {
+        color: blue;
+        }
+        #resolucion{
+            color: rgb(0, 255, 234);
+            font-size: 12pt;
+        }
+
+        * {color:green; }
+        a:link {color:gray }
+        a:visited{color:blue }
+        a:hover {color:fuchsia }
+        a:active {color:red }
+        p {font-family: arial,helvetica;font-size: 10px;color:black; }
+        .contenido{font-size: 14px;font-weight: bold; }
+
+    </style>
+</head>
+<body>
+    <!-- Tosoratto Facundo 45784 -->    
+    <h1>Ejercicio 4 Práctica 2</h1>
+
+    <h2>Codigo 1:</h2>
+    <p class="contenido" style="font-weight: normal;">
+         Este es un texto ...............
+    </p>
+    <table>
+        <tr>
+            <td>Y esta es una tabla.......</td>
+        </tr>
+        <tr>
+            <td><a href="http://www.google.com.ar">con un
+            enlace</a></td>
+        </tr>
+    </table>
+
+    <h2>Codigo 2:</h2>
+    <div class="contenido">    
+        <p> Este es un texto................</p>
+     <table>
+        <tr>
+            <td>Y esta es una tabla.......</td>
+        </tr>
+        <tr>
+            <td><a href="http://www.google.com.ar">con
+            un enlace</a></td>
+        </tr>
+      </table>
+    </div>
+    <h2>Resolucion:</h2>
+    <p id="resolucion">
+        El primer caso define al primer parrafo como miembro de la clase "contenido" y con un
+        peso de fuente normal, lo cual se suma a lo definido en el style de la web, con un tamaño
+        de fuente de 14px, familia de fuente arial o helvetica y color negro.
+        Pero superpone las definiciones de color verde, tamaño de fuente 10px y letra negrita. <br>
+        La tabla aplica el color verde que se define para todos los elementos y el link aplica los
+        distintos colores segun la pseudo-clase activa en el momento. <br> <br>
+        El segundo caso aplica a todo el formato de la clase contenido, es decir tamaño 14 de letra y
+        negrita, sin embargo, el elemento parrafo superpone estas definiciones por las de el propio 
+        elemento, como letra tamaño 10 y color negro, manteniendo la negrita. <br>
+        La tabla aplica el color verde que se define para todos los elementos y el link aplica los
+        distintos colores segun la pseudo-clase activa en el momento.
+
+    </p>
+</body>
+</html>

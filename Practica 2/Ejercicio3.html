@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        p.quitar {
+        color: red;
+        }
+        *.desarrollo {
+        font-size: 8px;
+        }
+        .importante {
+        font-size: 20px;
+        }
+        #resolucion{
+            color: rgb(0, 255, 234);
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tosoratto Facundo 45784 -->
+    <h1>Ejercicio 3 Práctica 2</h1>
+    <p class="desarrollo">
+    En este primer párrafo trataremos lo siguiente:
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+    </p>
+    <p class="quitar">
+    Este párrafo debe ser quitado de la obra…
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+    </p>
+    <p >
+    En este otro párrafo trataremos otro tema:<br />
+    xxxxxxxxxxxxxxxxxxxxxxxxx
+    </p>
+    <p class="importante">
+    Y este es el párrafo más importante de la obra…
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+    </p>
+    <h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+    <p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+    <br>
+    <p id="resolucion">
+        La primer declaracion afecta a los elementos de parrafos que pertenezcan a la clase "quitar",
+        modificando su color a Rojo. <br>
+        La segunda declaracion modifica a todos los elementos que pertenezcan a la clase "desarrollo",
+        modificando su tamaño de fuente a 8 pixeles. <br>
+        La tercera declaracion modifica a todos los elementos que pertenezcan a la clase "importante",
+        modificando su tamaño de fuente a 20 pixeles. <br>
+        Nuevamente podemos observar que es redundante usar el * en este caso antes del selector de clase.
+    </p>
+</body>
+</html>

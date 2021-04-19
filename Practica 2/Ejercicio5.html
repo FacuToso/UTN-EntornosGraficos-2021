@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <style>
+        strong {color: red;}
+
+        div p *[href] {color: black;}
+
+        div#ultimo ul {color:yellow;} /* corroborar color enlace */
+
+        div #importante {color:green;}
+        h1 #importante {color: red;} /* corroborar propiedad titulo*/
+
+        h1[title] {color:blue;}
+
+        ol a:link {color: blue; text-decoration-line: none;} /* consultar si va en 1 solo lugar el decoration */
+        ol a:visited {color: violet;}
+    </style>
+</head>
+<body>
+    <!-- Tosoratto Facundo 45784 -->    
+    <h1 style="color: black;">Ejercicio 5 Práctica 2</h1>
+
+    <h3>Ejercicio 1:</h3>
+    <strong>Esto deberia ser rojo</strong>
+
+    <h3>Ejercicio 2:</h3>
+    <div>
+        <p>
+            <a href="#">Esto debe ser negro</a>
+        </p>
+    </div>
+
+    <h3>Ejercicio 3:</h3>    
+    <div id="ultimo">
+        <ul>
+            <li>Esto deberia ser amarillo</li>
+            <li><a href="#">Esto deberia ser azul</a></li>
+        </ul>
+    </div>
+
+    <h3>Ejercicio 4:</h3>
+    <div>
+        <p id="importante">Esto debería ser verde</p>
+    </div>
+
+    <h1>
+        <p id="importante">Esto deberia ser rojo</p>
+    </h1>
+    
+    <h3>Ejercicio 5:</h3>
+    <h1 title="Hola">Esto deberia ser azul</h1>
+
+    <h3>Ejercicio 6:</h3>
+    <ol>
+        <li>
+            <p>
+                <a href="https://www.canada.com/" target="_blank">No visitado deberia ser azul</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a href="#">Visitado deberia ser violeta</a>
+            </p>
+        </li>
+    </ol>
+
+</body>
+</html>
